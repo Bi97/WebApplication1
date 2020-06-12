@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+}
+
+@*@if (ViewBag.id == 1)
+    {
+        <label>1</label>
+    }
+    @if (ViewBag.id == 2)
+    {
+        <label>2</label>
+    }
+    @if (ViewBag.id == 3)
+    {
+        <label>3</label>
+    }
+    @if (ViewBag.id == 4)
+    {
+        <label>4</label>
+    }*@
+@switch (ViewBag.id)
+{
+    case 1:
+
+        <div style="height:195px ; width:140px ;border : solid 1px gray ; display:block ; margin: 10px ;">
+            <div style="height:20px ; width100% ; display:flex ; align-items:center ; justify-content:center; border-bottom: solid 1px gray ; background-color:gray"> iPhone </div>
+            <a href="@Url.Action("Details","Home", new {@id = 1 })">
+                <img style="height:155px ; width:100%" src="~/Models/images/occuc.png" />
+            </a>
+            <div style="height:20px ; width100% ; display:flex ; align-items:center ;  border-top : solid 1px gray ; background-color: gray ">
+                <div>1000$ </div>
+                <div style="margin-left:60px">Apple</div>
+            </div>
+        </div>
+
+        break;
+    case 2: <label>2</label>
+        break;
+    case 3: <label>3</label>
+        break;
+    case 4: <label>4</label>
+        break;
+    case 5: <label>5</label>
+        break;
+    case 6: <label>6</label>
+        break;
+    case 7: <label>7</label>
+        break;
+    case 8: <label>8</label>
+        break;
+}
